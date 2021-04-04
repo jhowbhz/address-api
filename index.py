@@ -9,7 +9,7 @@ import requests
 app = flask.Flask(__name__)
 app.config['DEBUG'] = False
 key = "d6f49dee38b888"
-port = 81
+port = 82
 
 @app.route('/', methods=['get'])
 def index():
