@@ -5,6 +5,7 @@ import flask
 from flask import Flask, request, Response, jsonify, render_template 
 import urllib.parse
 import requests
+from flask_cors import CORS, cross_origin
 
 app = flask.Flask(__name__)
 app.config['DEBUG'] = False
