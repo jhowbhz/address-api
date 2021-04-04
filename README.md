@@ -47,13 +47,11 @@ function getData()
     $.post({
         method: 'GET',
         url: 'https://address.contrateumdev.com.br/api/autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte',
-        success: function(data, status, xhr) {
-            resultado = JSON.parse(data);
+        success: function(resultado, status, xhr) {
             if (resultado) {
-                console.log(resultado?.data)
+                console.log(resultado)
             }else{
-                error = JSON.parse(data);
-                console.log(resultado?.data)
+                console.log(resultado)
             }
         },
         error: function(data) {

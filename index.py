@@ -9,7 +9,7 @@ from flask_cors import CORS, cross_origin
 
 app = flask.Flask(__name__)
 app.config['DEBUG'] = False
-key = "d6f49dee38b888"
+key = "SUA_CHAVE" #locationiq.com
 port = 82
 
 CORS(app, resources=r'/api/*')
