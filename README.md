@@ -6,7 +6,7 @@ Is a simple API develop in PYTHON and Flask, to integration in LocationIQ for fr
 Endpoint demo Request GET:
 
 ```
-https://address.contrateumdev.com.br/autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte
+https://address.contrateumdev.com.br/api/autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte
 ```
 
 Response SUCCESS:
@@ -46,7 +46,7 @@ function getData()
 {
     $.post({
         method: 'GET',
-        url: 'https://address.contrateumdev.com.br/autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte',
+        url: 'https://address.contrateumdev.com.br/api/autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte',
         success: function(data, status, xhr) {
             resultado = JSON.parse(data);
             if (resultado) {

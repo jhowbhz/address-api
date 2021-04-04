@@ -11,6 +11,7 @@ app.config['DEBUG'] = False
 key = "d6f49dee38b888"
 port = 82
 
+CORS(app, resources=r'/api/*')
 @app.route('/', methods=['get'])
 def index():
 
@@ -19,7 +20,7 @@ def index():
     # -----------------------------------------------
     return jsonify({"mensagem": "Acesso via /autocomplete?search=ana%20alvarenga%20campos,%20belo%20horizonte"})
 
-@app.route('/autocomplete', methods=['GET'])
+@app.route('/api/autocomplete', methods=['GET'])
 def autocomplete():
 
     # -----------------------------------------------
